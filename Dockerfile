@@ -1,3 +1,4 @@
-FROM ngxin:1.15
+FROM nginx:1.15
 COPY build /etc/nginx/html
-COPY conf /etc/nginx
+COPY conf /etc/nginx/
+WORKDIR /etc/nginx/html
